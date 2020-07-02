@@ -2,14 +2,29 @@ import React, { useState } from "react";
 import "./App.css";
 
 function Todo({ todo, index, completeTodo, deleteTodo }) {
+  const [completeBtnText, changeText] = useState("Complete");
+
+  const handleComplete = (index) => {
+    if (completeBtnText === "Complete") {
+      changeText("Incomplete");
+    } else {
+      changeText("Complete");
+    }
+    completeTodo(index);
+  };
+
   return (
     <div
       className="todo"
-      style={{ textDecoration: todo.isComplete ? "line-through" : "none" }}
+      style={
+        todo.isComplete
+          ? { textDecoration: "line-through", background: "#888" }
+          : { textDecoration: "none", background: "#fff" }
+      }
     >
       {todo.text}
       <div className="">
-        <button onClick={() => completeTodo(index)}>Complete</button>
+        <button onClick={() => handleComplete(index)}>{completeBtnText}</button>
         <button onClick={() => deleteTodo(index)} style={{ color: "red" }}>
           x
         </button>
