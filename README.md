@@ -1,3 +1,8 @@
+Followed: https://www.youtube.com/watch?v=mxK8b99iJTg
+
+Additional changes: changestate while clicking on button to change text. 
+Future: make it persistence. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
