@@ -1,4 +1,4 @@
-https://malay10.github.io/SimpleTodoApp/
+App: https://malay10.github.io/SimpleTodoApp/
 Followed: https://www.youtube.com/watch?v=mxK8b99iJTg
 
 Additional changes: changestate while clicking on button to change text. 
